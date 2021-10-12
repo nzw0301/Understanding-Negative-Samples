@@ -1,0 +1,8 @@
+# @package _global_
+hydra:
+    output_subdir: .hydra
+    run:
+        dir: results/${dataset.name}/analysis/bound/seed-${experiment.seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}/${experiment.gpu_id}
+    sweep:
+        dir: results/${dataset.name}/analysis/bound/seed-${experiment.seed}/${now:%Y-%m-%d}/${now:%H-%M-%S}/${experiment.gpu_id}
+        subdir: ${hydra.job.num}

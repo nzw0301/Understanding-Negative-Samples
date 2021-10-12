@@ -1,0 +1,13 @@
+# @package _group_
+defaults:
+    - architecture: fasttext
+    - dataset: ag_news
+    - experiment: training/ag_news
+    - optimizer: nlp/supervised
+    - hydra/output: supervised_nlp
+
+parameter:
+    algorithm: supervised
+    classification_results_json_fname: results.json
+    metric: acc # loss or acc
+    save_predictions: false

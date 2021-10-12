@@ -1,0 +1,6 @@
+# @package _group_
+defaults:
+    - dataset: ag_news
+    - experiment: evaluation/ag_news/linear
+    - optimizer: nlp/linear
+    - hydra/output: centroid_eval

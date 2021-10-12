@@ -1,0 +1,9 @@
+# @package _global_
+experiment:
+    batches: 512 # the size of mini-batches. The number of negs are almost double of this value.
+    epochs: 100
+    num_workers: 8
+    output_model_name: ag_news.pt
+    save_model_epoch: 50
+    seed: 7 # random seed value
+    gpu_id: 0

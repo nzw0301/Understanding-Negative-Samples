@@ -1,0 +1,5 @@
+# @package _group_
+defaults:
+    - dataset: ag_news
+    - experiment: analysis/cifar/save_feature
+    - hydra/output: analysis

@@ -1,0 +1,7 @@
+# @package _global_
+dataset:
+    name: cifar10
+    strength: 0.5 # data augmentation parameter
+    size: 32 # size to crop
+    # for self-supervised
+    num_views: 2 # the number of views per sample. SimCLR is for 2.

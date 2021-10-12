@@ -1,0 +1,10 @@
+# @package _global_
+experiment:
+    batches: 1024 # the size of mini-batches to forward.
+    target_weight_file:  # centroid
+    seed: 7 # random seed value
+    num_workers: 8
+    use_cuda: true
+    analysis: save_unnormalised_feature
+    use_projection_head: true # original feature extractor to the SimCLR paper
+    gpu_id: 0

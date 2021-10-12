@@ -1,0 +1,11 @@
+# @package _group_
+defaults:
+    - architecture: fasttext
+    - dataset: ag_news
+    - experiment: training/ag_news
+    - loss: simclr
+    - optimizer: nlp/simclr_sgd
+    - hydra/output: supervised_nlp
+
+parameter:
+    algorithm: self_supervised

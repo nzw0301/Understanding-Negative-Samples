@@ -1,0 +1,14 @@
+# @package _global_
+experiment:
+    batches: 512 # the size of mini-batches to forward.
+    classification_results_json_fname: results.json
+    target_weight_file: # for linear eval
+    epochs: 20
+    seed: 7 # random seed value
+    num_workers: 8
+    classifier: linear
+    top_k: 2
+    normalize: false
+    output_model_name: linear.pt
+    gpu_id: 0 # for single gpu training
+    use_projection_head: false # original feature extractor to the SimCLR paper

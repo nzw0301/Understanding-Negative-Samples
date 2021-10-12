@@ -1,0 +1,8 @@
+# @package _global_
+optimizer:
+    linear_schedule: true
+    momentum: 0.9
+    warmup_epochs: 0.
+    lr: 0.3 # learning rate
+    decay: 0. # weight decay
+    # follow SWaV parameter since SimCLR uses TPUs https://github.com/facebookresearch/swav/blob/master/eval_linear.py#L64-L67

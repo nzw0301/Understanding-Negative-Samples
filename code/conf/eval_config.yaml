@@ -1,0 +1,5 @@
+# @package _group_
+defaults:
+    - dataset: cifar100
+    - experiment: evaluation/cifar/centroid
+    - hydra/output: centroid_eval

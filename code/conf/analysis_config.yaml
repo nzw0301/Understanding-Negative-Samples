@@ -1,0 +1,5 @@
+# @package _group_
+defaults:
+    - dataset: cifar100
+    - experiment: analysis/cifar/save_feature
+    - hydra/output: analysis

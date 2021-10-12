@@ -1,0 +1,13 @@
+# @package _global_
+experiment:
+    batches: 1024 # the size of mini-batches to forward.
+    classification_results_json_fname: results.json
+    target_weight_file:  # for centroid
+    seed: 7 # random seed value
+    num_workers: 8
+    use_cuda: true
+    classifier: centroid
+    top_k: 5
+    use_projection_head: false # original feature extractor to the SimCLR paper
+    gpu_id: 0
+    output_model_name: centroid.pt

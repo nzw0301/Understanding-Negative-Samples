@@ -1,0 +1,9 @@
+# @package _global_
+experiment:
+    batches: 512 # the size of mini-batches. The number of negs are almost double of this value.
+    epochs: 500
+    num_workers: 8
+    output_model_name: cifar.pt
+    save_model_epoch: 250
+    seed: 7 # random seed value
+    use_cuda: true

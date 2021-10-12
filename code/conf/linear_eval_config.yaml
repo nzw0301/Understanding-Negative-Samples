@@ -1,0 +1,7 @@
+# @package _group_
+defaults:
+    - dataset: cifar100
+    - experiment: evaluation/cifar/linear
+    - optimizer: linear
+    - distributed: base
+    - hydra/output: eval

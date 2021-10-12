@@ -1,0 +1,10 @@
+# @package _global_
+experiment:
+    num_augmentations: 5
+    bound_json_fname: bounds.json
+    target_weight_file:
+    seed: 7 # random seed value
+    num_workers: 8
+    use_cuda: true
+    epochs: 10
+    gpu_id: 0

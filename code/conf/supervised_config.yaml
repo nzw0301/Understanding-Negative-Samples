@@ -1,0 +1,14 @@
+# @package _group_
+defaults:
+    - architecture: smaller
+    - dataset: cifar100
+    - experiment: training/cifar
+    - optimizer: supervised
+    - distributed: base
+    - hydra/output: supervised
+
+parameter:
+    algorithm: supervised
+    classification_results_json_fname: results.json
+    metric: acc # loss or acc
+    save_predictions: false

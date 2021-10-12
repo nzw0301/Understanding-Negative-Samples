@@ -1,0 +1,3 @@
+# @package _global_
+architecture:
+    base_cnn: resnet50
