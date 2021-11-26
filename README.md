@@ -66,7 +66,8 @@ To obtain all figures and tables, you run notebooks in [`code/notebooks/`](./cod
 
 ## Related resources
 
-coming soon.
+- [paper](https://openreview.net/forum?id=pZ5X_svdPQ)
+- [slides](https://speakerdeck.com/nzw0301/understanding-negative-samples-in-instance-discriminative-self-supervised-representation-learning)
 
 ## Reference
 ```
