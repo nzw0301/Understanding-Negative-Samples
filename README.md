@@ -38,8 +38,7 @@ wget https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.z
 python nlp_construct_simiar_data.py
 ```
 
-Please fill the value of `replace_data` in [`conf/dataset/ag_news.yaml`](./conf/dataset/ag_news.yaml) with the generated file's path.
-For example,
+Please fill the value of `replace_data` in [`conf/dataset/ag_news.yaml`](./conf/dataset/ag_news.yaml) with the generated file's path. For example,
 
 ```yaml
 replace_data: /home/nzw/code/ag_replace_ids.npy
@@ -55,19 +54,23 @@ After training, please run [`./gather_weights.py`](./gather_weights.py) to gener
 
 Please run __content__ of all scripts in `./scripts/**/eval/` under [`code`](./code) as well.
 
-For ag news dataset, please run [`code/notebooks/filter_ag_news.ipynb`](code/notebooks/filter_ag_news.ipynb) __after__ evaluation of mean classifier __before__ the other evaluation scripts such as linear classifier and bound computation.
+For the AG news dataset, please run [`code/notebooks/filter_ag_news.ipynb`](code/notebooks/filter_ag_news.ipynb) __after__ evaluation of mean classifier __before__ the other evaluation scripts such as linear classifier and bound computation.
 
-To obtain all figures and tables, you run notebooks in [`code/notebooks/`](./code/notebooks). The codes save generated figures and tables into [`./doc/figs`](./doc/figs) and [`./doc/tabs`](./doc/tabs), respectively.
+To obtain all figures and tables in the paper, you run notebooks in [`code/notebooks/`](./code/notebooks). The codes save generated figures and tables into [`./doc/figs`](./doc/figs) and [`./doc/tabs`](./doc/tabs), respectively.
 
-- [`code/notebooks/bound.ipynb`](code/notebooks/bound.ipynb) creates Figure 1, the content of Table 2, and Tables 4 and 5 .
-- [`code/notebooks/coupon.ipynb`](code/notebooks/coupon.ipynb) creates Table 3.
-- [`code/notebooks/collision.ipynb`](code/notebooks/collision.ipynb) computes upper bound of collision term sed in `code/notebooks/bound.ipynb`.
-- [`code/notebooks/collosion_analysis.ipynb`](code/notebooks/collosion_analysis.ipynb) creates Figures 3, 4, and 5.
+- [`code/notebooks/bound.ipynb`](code/notebooks/bound.ipynb) generates Figure 1, the content of Table 2, and Tables 4 and 5.
+- [`code/notebooks/coupon.ipynb`](code/notebooks/coupon.ipynb) generates Table 3.
+- [`code/notebooks/collision.ipynb`](code/notebooks/collision.ipynb) computes upper bound of the collision term used in `code/notebooks/bound.ipynb`.
+- [`code/notebooks/collosion_analysis.ipynb`](code/notebooks/collosion_analysis.ipynb) generates Figures 3, 4, and 5.
 
 ## Related resources
 
-- [paper](https://openreview.net/forum?id=pZ5X_svdPQ)
-- [slides](https://speakerdeck.com/nzw0301/understanding-negative-samples-in-instance-discriminative-self-supervised-representation-learning)
+- [Openreview](https://openreview.net/forum?id=pZ5X_svdPQ)
+- [arXiv](https://arxiv.org/abs/2102.06866)
+- [Slides](https://speakerdeck.com/nzw0301/understanding-negative-samples-in-instance-discriminative-self-supervised-representation-learning)
+- [NeurIPS Poster](https://drive.google.com/file/d/1uGDY2YrneNF2bFgjh1yMlDeUpVk1GQRL/view)
+- [Video](https://nips.cc/virtual/2021/poster/27316)
+- [Video in Japanese](https://www.youtube.com/watch?v=nK46OGjoosQ)
 
 ## Reference
 ```
