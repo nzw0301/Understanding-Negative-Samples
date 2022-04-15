@@ -75,9 +75,10 @@ To obtain all figures and tables in the paper, you run notebooks in [`code/noteb
 ## Reference
 ```
 @inproceedings{NS2021,
-    title = {Understanding Negative Samples in Instance Discriminative Self-supervised Representation Learning},
-    author = {Kento Nozawa, Issei Sato},
-    year = {2021},
+    title     = {Understanding Negative Samples in Instance Discriminative Self-supervised Representation Learning},
+    author    = {Kento Nozawa, Issei Sato},
+    year      = {2021},
     booktitle = {NeurIPS},
+    pages     = {5784--5797},
 }
 ```
